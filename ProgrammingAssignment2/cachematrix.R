@@ -1,9 +1,9 @@
 ## At first, we initialize two global variable, they cache the matrix that input
-## before, and it's inverse.
+## before, and its inverse.
 cachematrix<<-NULL
 cacheinverse<<-NULL
 
-##The function be use to make the cache list as the input of the second function
+##The function be used to make the cache list as the input of the second function
 makeCacheMatrix <- function(x = matrix()) {
   get<-x
   maintain<-cachematrix
