@@ -1,4 +1,4 @@
 # R-data-practice
-'runrun_analysis.R': programmingassignment3
+'run_analysis.R': programmingassignment3
 
 
