@@ -1,4 +1,6 @@
 ##read the data file by choosing the file in the open window
+
+library(dplyr)
 x_train_data<-read.table(file.choose())
 y_train_data<-read.table(file.choose())
 subject_train_data<-read.table(file.choose())
@@ -31,7 +33,7 @@ activity_labels<-read.table(file.choose())
 colnames(data)[dim(data)[2]-1]<-'activity'
 colnames(data)[dim(data)[2]]<-'subject'
 #use activity names rename the data
-data<-mutate(data,activity=activity_labels[activity,2])
+
 
 ##4.Appropriately labels the data set with descriptive variable names.
 
