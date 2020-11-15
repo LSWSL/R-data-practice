@@ -125,5 +125,5 @@ head(activity2)
 activity2<-group_by(activity2,weekdays,interval)
 st2<-summarise(activity2,avg_steps=mean(steps))
 g<-ggplot(st2,aes(x=interval,y=avg_steps))
-g+geom_line()+facet_grid(~weekdays)
+g+geom_line()+facet_grid(weekdays~.)
 ```
