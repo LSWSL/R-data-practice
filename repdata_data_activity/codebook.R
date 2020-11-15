@@ -34,5 +34,5 @@ activity2<-mutate(activity2,weekdays=recode(weekdays(as.Date(date)),
 activity2<-group_by(activity2,weekdays,interval)
 st2<-summarise(activity2,steps=mean(steps))
 g<-ggplot(st2,aes(x=interval,y=steps))
-g+geom_line(size=1)+facet_grid(weekdays)
+g+geom_line()+facet_grid(~weekdays)
 
