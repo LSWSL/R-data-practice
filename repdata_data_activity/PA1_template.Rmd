@@ -3,8 +3,8 @@ title: "Reproducible-research Course Project 1"
 author: "LSW"
 date: "2020/11/11"
 output:
+  md_document: default
   html_document: default
-  d_document: default
   pdf_document: default
   word_document: default
 --- 

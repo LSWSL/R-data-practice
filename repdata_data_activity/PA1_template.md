@@ -52,7 +52,7 @@ taken per day.
     avg_step<-avg_step%>%mutate(steps=as.integer(steps))# as integer
     plot(avg_step$interval,avg_step$steps,type = 'l',ylab = 'average of steps',xlab = 'interval')
 
-[](PA1_template_files/figure-markdown_strict/plot2-1.png)
+![](PA1_template_files/figure-markdown_strict/plot2-1.png)
 
 2.Which 5-minute interval, on average across all the days in the
 dataset, contains the maximum number of steps?
@@ -157,6 +157,6 @@ should look like using simulated data.
     activity2<-group_by(activity2,weekdays,interval)
     st2<-summarise(activity2,avg_steps=mean(steps))
     g<-ggplot(st2,aes(x=interval,y=avg_steps))
-    g+geom_line()+facet_grid(~weekdays)
+    g+geom_line()+facet_grid(weekdays~.)
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
