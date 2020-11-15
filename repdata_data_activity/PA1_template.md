@@ -29,7 +29,7 @@
 
     hist(steps$steps,main = 'total steps',xlab = 'steps')
 
-PA1_template_files/figure-markdown_strict/unnamed-chunk-3-1.png
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
 3.Calculate and report the mean and median of the total number of steps
 taken per day.
@@ -104,7 +104,7 @@ estimates of the total daily number of steps?
     steps<-summarise(activity2,steps=sum(steps,na.rm=T))
     hist(steps$steps,main = 'total steps',xlab = 'steps')
 
-PA1_template_files/figure-markdown_strict/unnamed-chunk-8-1.png
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
     total_step2<-c(mean=mean(steps$steps),median=median(steps$steps))
     total_step2
@@ -159,4 +159,4 @@ should look like using simulated data.
     g<-ggplot(st2,aes(x=interval,y=avg_steps))
     g+geom_line()+facet_grid(~weekdays)
 
-PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
