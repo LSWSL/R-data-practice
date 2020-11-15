@@ -159,4 +159,4 @@ should look like using simulated data.
     g<-ggplot(st2,aes(x=interval,y=avg_steps))
     g+geom_line()+facet_grid(weekdays~.)
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-2.png)
